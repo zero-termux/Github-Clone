@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: cover;
+  font-family: arial;
+}
+
+body {
+  background-color: rgb(31,31,31);
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.parent {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#nav nav {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(31,31,31)!important;
+}
+
+section#isi {
+  margin-top: 70px;
+}
+
+.header h6 {
+  margin: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.header i {
+  margin: 15px;
+  color: rgb(106,106,106);
+}
+
+.work .row {
+  margin-bottom: 30px!important;
+  margin-left: -5px!important;
+}
+
+.work i {
+  color: white;
+  font-size: 15px;
+  background-color: rgb(96,201,54);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.work p {
+  color: white;
+  margin-top: -5px!important;
+  margin-left: 7px!important;
+}
+
+#fav h6 {
+  margin: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+#fav p {
+  color: white;
+  font-size: 17px;
+  display: block;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+#fav button {
+  color: rgb(26,126,204);
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: rgb(50,50,50);
+}
+
+#shortcut {
+  margin-bottom: 100px!important;
+}
+
+#shortcut h6 {
+  margin: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+#shortcut p {
+  color: white;
+  font-size: 17px;
+  display: block;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+#shortcut button {
+  color: rgb(26,126,204);
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: rgb(50,50,50);
+}
+
+#shortcut p span {
+  color: white;
+  font-size: 18px;
+  display: block;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#menu nav {
+  height: 66px;
+  box-shadow: 1px 0px 1px rgb(82,82,82);
+  background-color: rgb(27,27,27)!important;
+}
+
+#menu nav i {
+  font-size: 22.5px;
+  line-height: 0.7;
+  cursor: pointer;
+}
+
+#menu nav i span {
+  font-size: 12.5px;
+  font-style: normal;
+}
+
+.offcanvas {
+  background-color: rgb(31,31,31)!important;
+}
+
+.offcanvas-body {
+  padding: 0!important;
+  color: white!important
+}
+
+.search {
+  background-color: rgb(50,50,50)!important;
+  padding: 5px;
+}
+
+.plus {
+  background-color: rgb(50,50,50)!important;
+  padding: 5px;
+}
+
+.sct {
+  background-color: rgb(50,50,50)!important;
+  padding: 5px;
+}
+
+.offcanvas-header {
+  background-color: rgb(31,31,31)!important;
+  color: white!important;
+}
+
+.offcanvas-header h5 {
+  color: white!important;
+  font-weight: bold;
+  margin-left: -45%!important;
+}
+
+.offcanvas-header a {
+  color: rgb(43,136,209)!important;
+  text-decoration: none!important;
+}
+
+.offcanvas-header h6 {
+  font-weight: bold!important;
+}
+
+#cari form input {
+  width: 100%!important;
+  border-radius: 0%!important;
+  box-shadow: none;
+  border: none;
+  background-color: rgb(50,50,50)!important;
+}
+
+.slt .row {
+  height: 55px!important;
+  background-color: rgb(50,50,50)!important;
+}
+
+.slt p {
+  opacity: 0.6;
+}
+
+.plus .row {
+  height: 42px!important;
+  background-color: rgb(50,50,50)!important;
+}
+
+.plus p {
+  color: rgb(43,136,209)!important;
+  font-weight: bold!important;
+}
+
+.plus i {
+  color: rgb(43,136,209)!important;
+}
+
+.sct i {
+  color: white;
+  font-size: 15px;
+  padding: 7px 8px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.sct .row {
+  height: 45px!important;
+  background-color: rgb(50,50,50)!important;
+}
+
+p.pg {
+  margin-top: -18px!important;
+}
+
+/* lebar dekstop */
+@media screen and (min-width: 600px) {
+  
+ #nav nav {
+   margin-left: 55px;
+   width: 93%;
+   height: 55px;
+ }
+ 
+ section#isi {
+   margin-left: 55px;
+   width: 93%;
+   margin-top: 60px;
+ }
+ 
+ section#shortcut {
+   margin-left: 55px;
+   width: 93%;
+   margin-bottom: 30px!important;
+ }
+ 
+#shortcut img {
+  width: 40%!important;
+}
+ 
+ section#fav {
+   margin-left: 55px;
+   width: 93%;
+ }
+ 
+  #menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 7%;
+        height: 100%;
+        background-color: rgb(27, 27, 27);
+        box-shadow: 1px 0px 1px rgb(82, 82, 82);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #menu nav {
+        height: 100%;
+        width: 55px;
+        box-shadow: none;
+        margin: -12px;
+        margin-bottom: 10px;
+      }
+
+      #menu nav i {
+        font-size: 22px;
+        line-height: 1.8;
+      }
+
+      #menu .col-2,
+      #menu .col-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #menu .col-3 i {
+        font-size: 22px;
+      }
+      
+      #menu .col-2 i {
+        font-size: 22px;
+        margin-left: -15px;
+      }
+
+      #menu nav i span {
+        display: none; /* Hide the span within the nav icon */
+      }
+}

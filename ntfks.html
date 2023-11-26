@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notification</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+<link  rel= "apple-touch-icon"  size= "57x57"  href= "apple-icon-57x57.png" >
+<link  rel= "apple-touch-icon"  size= "60x60"  href= "apple -icon-60x60.png" > 
+<link  rel= "apple-touch-icon"  size= "72x72"  href= "apple-icon-72x72.png" >
+<link  rel= "apple-touch-icon"  size= "76x76"  href= "apple-icon-76x76.png" >
+<link  rel= "apple-touch-icon"  size= "114x114"  href= "apple-icon-114x114.png" > 
+<link  rel= " apple-touch-icon"  size= "120x120"  href= "apple-icon-120x120.png" > 
+<link  rel= "apple-touch-icon"  size= "144x144"  href= "apple-icon-144x144. png" > 
+<link  rel= "apple-touch-icon"  size= "152x152"  href= "apple-icon-152x152.png" > 
+<link  rel= "apple-touch-icon"  size= "180x180"  href= "apple-icon-180x180.png" > 
+<link  rel= "icon"  type= "image/png"  size= "192x192"   href= "android-icon-192x192.png" > 
+<link  rel= "icon"  ketik= "gambar/png"  ukuran= "32x32"  href= "favicon-32x32.png" > 
+<link  rel= "icon"  type= "gambar/png"  ukuran= "96x96"  href= "favicon-96x96. png" > 
+<link  rel= "icon"  type= "image/png"  size= "16x16"  href= "favicon-16x16.png" > 
+<link  rel= "manifest"  href= "manifest.json" > 
+<meta  name= "msapplication-TileColor"  content= "#ffffff" > 
+<meta  name= "msapplication-TileImage"  content= "ms-icon-144x144.png" > 
+<meta  name= "theme-color"  isi= "#ffffff" >
+    
+    <!-- style abid -->
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: cover;
+  font-family: arial;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.parent {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#nav nav {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(31,31,31)!important;
+}
+
+nav button {
+  cursor: pointer;
+}
+
+nav#nav2 {
+  margin-top: 50px!important;
+}
+
+button#dp {
+  border-radius: 20px!important;
+  padding: 2.5px 10px!important;
+  font-size: 14px;
+  background-color: rgb(59,59,59)!important;
+  border: none;
+}
+
+button#dp2 {
+  border-radius: 20px!important;
+  padding: 2.5px 10px!important;
+  font-size: 14px;
+  background-color: rgb(59,59,59)!important;
+  border: none;
+}
+
+#menu nav {
+  height: 66px;
+  box-shadow: 1px 0px 1px rgb(82,82,82);
+  background-color: rgb(27,27,27)!important;
+  z-index: -1!important;
+}
+
+#menu nav i {
+  font-size: 22.5px;
+  line-height: 0.7;
+  cursor: pointer;
+}
+
+#menu nav i span {
+  font-size: 12.5px;
+  font-style: normal;
+}
+
+.offcanvas {
+  width: 100%;
+  height: 70%!important;
+}
+
+#isi img {
+  position: relative;
+  z-index: -2!important;
+}
+
+.offcanvas-body {
+  padding: 0;
+}
+
+.slt .row {
+  margin-top: -12px;
+  background-color: #212529!important;
+  font-size: 16px;
+}
+
+/* lebar dekstop */
+@media screen and (min-width: 600px) {
+  
+ #nav nav {
+   margin-left: 55px;
+   width: 93%;
+   height: 40px;
+ }
+ 
+ nav#nav2 {
+  margin-top: 39px!important;
+}
+ 
+ section#isi {
+   margin-left: 50px;
+   width: 93%;
+   margin-top: -15px;
+ }
+ 
+  #menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 7%;
+        height: 100%;
+        background-color: rgb(27, 27, 27);
+        box-shadow: 1px 0px 1px rgb(82, 82, 82);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #menu nav {
+        height: 100%;
+        width: 55px;
+        box-shadow: none;
+        margin: -12px;
+        margin-bottom: 10px;
+      }
+
+      #menu nav i {
+        font-size: 22px;
+        line-height: 1.8;
+      }
+
+      #menu .col-2,
+      #menu .col-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #menu .col-3 i {
+        font-size: 22px;
+      }
+      
+      #menu .col-2 i {
+        font-size: 22px;
+        margin-left: -15px;
+      }
+
+      #menu nav i span {
+        display: none; /* Hide the span within the nav icon */
+      }
+}
+    </style>
+    
+  </head>
+  <body>
+<div class="parent">
+
+     <!-- awal nav -->
+<section id="nav">
+  <nav class="navbar navbar-expand-lg  border-body fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Notifications</span>
+  </div>
+</nav>
+
+
+  <nav id="nav2" class="navbar navbar-expand-lg  border-body fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button id="dp" class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">inbox<i class="bi bi-chevron-down ms-1" style="font-size: 11px;"></i></button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <h5 class="offcanvas-title me-auto" id="offcanvasBottomLabel">Filter Notifications by</h5>
+  </div>
+  <div class="offcanvas-body small" style="background-color: black;">
+    
+   <div class="slt">
+    <div class="row">
+     <div class="col-10 pt-4">
+      <p class="mt-3 ms-3">Inbox</p>
+        </div>
+        <div class="col-2 mt-2 pt-4">
+          <i class="bi bi-check2" style="color: rgb(43,136,209); font-size: 22px;"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 pt-2 pb-4">
+          <p class="mt-5 ms-3">Saved</p>
+        </div>
+      </div>
+      <div class="row mb-4">
+       <div class="col-12 pt-3 pb-3">
+        <p class="mt-3 ms-3">Done</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slt">
+    <div class="row mt-2">
+     <div class="col-12 pt-4">
+      <p class="mt-3 ms-3">🎯  Assigned</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 pt-2 pb-4">
+          <p class="mt-5 ms-3">💬 Participating</p>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-12 pt-3 pb-4">
+        <p class="mt-3 ms-3">🖐️ Mentioned</p>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-12 pt-4 pb-4">
+        <p class="mt-2 ms-3">🙌 Team mentioned</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+       <div class="col-12 pt-4 pb-4">
+        <p class="mt-2 ms-3">👀 Review requested</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <button id="dp2" class="btn btn-secondary ms-2" type="button">Unread</button>
+
+    <button id="dp" class="btn btn-secondary me-auto ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Repository<i class="bi bi-chevron-down ms-1" style="font-size: 11px;"></i></button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <h5 class="offcanvas-title me-auto" id="offcanvasBottomLabel">Filter by repository</h5>
+    <i class="bi bi-search ms-auto" style="color: rgb(15,89,147); font-size: 20px;"></i>
+  </div>
+  <div class="offcanvas-body small ps-4" style="background-color: black;">
+    <h2 class="mt-5 ms-5" style="font-weight: bold;">Nothing to see here</h2>
+  </div>
+</div>
+
+  </div>
+</nav>
+
+</section>
+   <!-- akhir nav -->    
+   
+    <!-- awal isi -->
+<section id="isi">
+  <img src="kosong.jpg" alt="kosong" style="width: 100%; margin-top: 70px;">
+</section>
+    <!-- akhir isi -->
+    
+    <!-- awal menu -->
+   <section id="menu">
+        <nav class="navbar navbar-expand-lg  border-body fixed-bottom" data-bs-theme="dark">
+  <div class="container-fluid">
+      <div class="row text-center ms-auto">
+        
+        <div id="home" class="col-2 ms-2 me-3">
+          <i class="bi bi-house-door" style="color: white; opacity: 0.6;">
+            <span>Home</span>
+          </i>
+        </div>
+        
+        <div class="col-3">
+          <i id="ntfks" class="bi bi-bell-fill" style="color: rgb(26,126,204);">
+            <span>Notification</span>
+          </i>
+        </div>
+        
+        <div class="col-3">
+          <i id="exp" class="bi bi-binoculars" style="color: white; opacity: 0.6;">
+            <span>Explore</span>
+          </i>
+        </div>
+        
+        <div class="col-3">
+          <i class="bi bi-person" style="color: white; opacity: 0.6; font-size: 25px; line-height: 0.4;" id="popoverBtn2">
+            <span>Profile</span>
+          </i>
+        </div>
+        
+      </div>
+   </div>
+   </nav>
+   </section>
+   <!-- akhir menu -->
+    
+</div>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+  <!-- bagian js abid -->
+    <script>
+let dp2 = document.getElementById('dp2');
+let originalColor = window.getComputedStyle(dp2).getPropertyValue('background-color'); // Mendapatkan warna latar belakang asli
+dp2.addEventListener('click', function() {
+  if (this.style.backgroundColor === originalColor || this.style.backgroundColor === '') {
+    this.style.setProperty('background-color', 'rgb(21,141,235)', 'important');
+  } else {
+    this.style.setProperty('background-color', originalColor, 'important');
+  }
+});
+
+document.getElementById('home').addEventListener('click', function() {
+  window.location.href = 'index.html'; 
+});
+
+document.getElementById('exp').addEventListener('click', function() {
+  window.location.href = 'exp.html'; 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var screenSize = window.innerWidth;
+
+    // Function to change image source based on screen size
+    function changeImageSource() {
+      var imgElement = document.querySelector('#isi img');
+      if (screenSize > 600) {
+        imgElement.src = 'kosong1.jpg';
+      } else {
+        imgElement.src = 'kosong.jpg';
+      }
+    }
+
+    // Initial call to set the image source on page load
+    changeImageSource();
+
+    // Event listener for window resize
+    window.addEventListener('resize', function () {
+      screenSize = window.innerWidth;
+      changeImageSource();
+    });
+  });
+  
+  var popover = new bootstrap.Popover(document.getElementById('popoverBtn2'), {
+    container: 'body',
+    placement: 'top',
+    content: 'Halaman ini belum dibuat',
+  });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eksplore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+<link  rel= "apple-touch-icon"  size= "57x57"  href= "apple-icon-57x57.png" >
+<link  rel= "apple-touch-icon"  size= "60x60"  href= "apple -icon-60x60.png" > 
+<link  rel= "apple-touch-icon"  size= "72x72"  href= "apple-icon-72x72.png" >
+<link  rel= "apple-touch-icon"  size= "76x76"  href= "apple-icon-76x76.png" >
+<link  rel= "apple-touch-icon"  size= "114x114"  href= "apple-icon-114x114.png" > 
+<link  rel= " apple-touch-icon"  size= "120x120"  href= "apple-icon-120x120.png" > 
+<link  rel= "apple-touch-icon"  size= "144x144"  href= "apple-icon-144x144. png" > 
+<link  rel= "apple-touch-icon"  size= "152x152"  href= "apple-icon-152x152.png" > 
+<link  rel= "apple-touch-icon"  size= "180x180"  href= "apple-icon-180x180.png" > 
+<link  rel= "icon"  type= "image/png"  size= "192x192"   href= "android-icon-192x192.png" > 
+<link  rel= "icon"  ketik= "gambar/png"  ukuran= "32x32"  href= "favicon-32x32.png" > 
+<link  rel= "icon"  type= "gambar/png"  ukuran= "96x96"  href= "favicon-96x96. png" > 
+<link  rel= "icon"  type= "image/png"  size= "16x16"  href= "favicon-16x16.png" > 
+<link  rel= "manifest"  href= "manifest.json" > 
+<meta  name= "msapplication-TileColor"  content= "#ffffff" > 
+<meta  name= "msapplication-TileImage"  content= "ms-icon-144x144.png" > 
+<meta  name= "theme-color"  isi= "#ffffff" >    
+    
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: cover;
+  font-family: arial;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.parent {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#nav nav {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(31,31,31)!important;
+}
+
+section#isi {
+  margin-top: 60px;
+  background-color: rgb(31,31,31)!important;
+}
+
+.header h6 {
+  margin: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.header i {
+  margin: 15px;
+  color: rgb(106,106,106);
+}
+
+.work .row {
+  margin-bottom: 30px!important;
+  margin-left: -5px!important;
+}
+
+.work i {
+  color: white;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.work p {
+  color: white;
+  margin-top: -5px!important;
+  margin-left: 7px!important;
+}
+
+.daftar h6 {
+  margin: 15px;
+  color: white;
+  font-size: 16.5px;
+}
+
+.daftar i {
+  margin: 15px;
+  color: white;
+}
+
+section#exp {
+  padding: 8px!important;
+  color: white;
+}
+
+#exp .awal {
+  background-color: rgb(31,31,31)!important;
+  border-radius: 5px;
+  padding: 5.7px;
+}
+
+#exp .awal p {
+  line-height: 1.2;
+  font-weight: 400;
+  opacity: 0.6;
+  font-size: 15.5px;
+}
+
+#exp button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: rgb(58,58,63);
+}
+
+#exp i {
+  color: white;
+  font-style: normal!important;
+  font-weight: 420;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+#exp #akr {
+  margin-bottom: 67px!important;
+}
+
+#menu nav {
+  height: 66px;
+  box-shadow: 1px 0px 1px rgb(82,82,82);
+  background-color: rgb(27,27,27)!important;
+}
+
+#menu nav i {
+  font-size: 22.5px;
+  line-height: 0.7;
+  cursor: pointer;
+}
+
+#menu nav i span {
+  font-size: 12.5px;
+  font-style: normal;
+}
+
+/* lebar dekstop */
+@media screen and (min-width: 600px) {
+  
+ #nav nav {
+   margin-left: 55px;
+   width: 93%;
+   height: 55px;
+ }
+ 
+ section#isi {
+   margin-left: 55px;
+   width: 93%;
+   margin-top: 55px;
+ }
+ 
+ #exp .awal {
+   margin-left: 53px;
+   width: 93.2%;
+ }
+ 
+ img#tlskp {
+   width: 20%!important;
+ }
+ 
+ img.prl {
+   width: 4%!important;
+ }
+ 
+#exp #akr {
+  margin-bottom: 5px!important;
+} 
+ 
+ #judul {
+   margin-left: 7%!important;
+ }
+ 
+  #menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 7%;
+        height: 100%;
+        background-color: rgb(27, 27, 27);
+        box-shadow: 1px 0px 1px rgb(82, 82, 82);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #menu nav {
+        height: 100%;
+        width: 55px;
+        box-shadow: none;
+        margin: -12px;
+        margin-bottom: 10px;
+      }
+
+      #menu nav i {
+        font-size: 22px;
+        line-height: 1.8;
+      }
+
+      #menu .col-2,
+      #menu .col-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      #menu .col-3 i {
+        font-size: 22px;
+      }
+      
+      #menu .col-2 i {
+        font-size: 22px;
+        margin-left: -15px;
+      }
+
+      #menu nav i span {
+        display: none; /* Hide the span within the nav icon */
+      }
+}
+    </style>
+  </head>
+  <body>
+  <div class="parent">
+    <!-- awal nav -->
+    <section id="nav">
+      <nav class="navbar navbar-expand-lg  border-body fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Eksplore</span>
+  </div>
+</nav>
+</section>
+    <!-- akhir nav -->
+  
+  <!-- awal isi -->
+  <section id="isi">
+     <div class="header">
+       <div class="row">
+          <div class="col-6">
+            <h6>Discover</h6>
+          </div>
+        </div>
+       </div>
+       
+       <div class="work mt-3">
+         <div class="row mb-4">
+          <div class="col-1">
+            <i class="bi bi-fire ms-2" style="background-color: rgb(213,67,67);"></i>
+          </div>
+          <div class="col-11 ms-5">
+            <p>Trending Repositories</p>
+          </div>
+        </div>
+        
+       <div class="row mb-4">
+          <div class="col-1">i<i class="bi bi-emoji-smile ms-2" style="background-color: rgb(163,74,179);"></i>
+          </div>
+          <div class="col-11 ms-5">
+            <p>Awesome Lists</p>
+          </div>
+        </div>
+        
+        
+       </div>
+  </section>
+  <!-- akhir isi -->
+  
+     <div class="daftar mt-1" id="judul">
+       <div class="row">
+          <div class="col-6">
+            <h6>Activity</h6>
+          </div>
+          <div class="col-6 d-flex justify-content-end" style="font-size: 20px;">
+            <i class="bi bi-filter"></i>
+          </div> 
+        </div>
+       </div>
+       
+    <!-- awal exp -->
+    <section id="exp">
+      <div class="awal text-center">
+        <img id="tlskp" src="awal.png" alt="exp" style="width: 40%;" class="mb-1">
+        
+        <h6 class="mb-3">Start Exploring GitHub for a Personalized Activity Feed</h6>
+        
+        <p class="mb-3">
+          Star repositories you like and follow contributors to receive personalized suggestions.
+        </p>
+      </div>
+      
+      <div class="awal mt-3">
+       <img src="orang1.jpg" alt="profil" class="prl ms-2 mt-1" style="width: 8%; border-radius: 50%; position: absolute;">
+       
+        <h6 class="mb-3 ms-5 mt-2 text-left">zero-termux <span style="opacity: 0.3;">/</span> awesome coding</h6>
+        
+        <p class="mb-3 ms-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odio iusto perferendis excepturi, quos laborum.
+        </p>
+        <p class="mb-2 ms-1"><i class="bi bi-star me-2"></i>100,5k</p>
+        <p class="mb-3 ms-1"><i class="bi bi-person me-2"></i>1115 contributors</p>
+        
+        <button class="mb-2"><i class="bi bi-star">  STAR</i></button>
+      </div>
+      
+      <div id="akr" class="awal mt-3 mb-5">
+      <img src="orang2.jpg" alt="profil" class="prl ms-2 mt-1" style="width: 8%; border-radius: 50%; position: absolute;">
+      
+        <h6 class="mb-3 ms-5 mt-2 text-left">zero-termux <span style="opacity: 0.3;">/</span> awesome future</h6>
+        
+        <p class="mb-3 ms-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odio iusto perferendis excepturi, quos laborum.
+        </p>
+        <p class="mb-2 ms-1"><i class="bi bi-star me-2"></i>230,5k</p>
+        <p class="mb-3 ms-1"><i class="bi bi-person me-2"></i>2045 contributors</p>
+        
+        <button class="mb-2"><i class="bi bi-star">  STAR</i></button>
+      </div>
+      
+    </section>
+    <!-- akhir exp -->
+    
+       <!-- awal menu -->
+   <section id="menu">
+        <nav class="navbar navbar-expand-lg  border-body fixed-bottom" data-bs-theme="dark">
+  <div class="container-fluid">
+      <div class="row text-center ms-auto">
+        
+        <div class="col-2 ms-2 me-3">
+          <i id="home" class="bi bi-house-door" style="color: white; opacity: 0.6;">
+            <span>Home</span>
+          </i>
+        </div>
+        
+        <div class="col-3">
+          <i id="ntfks" class="bi bi-bell" style="color: white; opacity: 0.6;">
+            <span>Notification</span>
+          </i>
+        </div>
+        
+        <div class="col-3">
+          <i class="bi bi-binoculars-fill" style="color: rgb(26,126,204);">
+            <span>Explore</span>
+          </i>
+        </div>
+        
+        <div class="col-3">
+          <i class="bi bi-person" style="color: white; opacity: 0.6; font-size: 25px; line-height: 0.4;" id="popoverBtn2">
+            <span>Profile</span>
+          </i>
+        </div>
+        
+      </div>
+   </div>
+   </nav>
+   </section>
+   <!-- akhir menu -->
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+document.getElementById('ntfks').addEventListener('click', function() {
+  window.location.href = 'ntfks.html'; 
+});
+
+document.getElementById('home').addEventListener('click', function() {
+  window.location.href = 'index.html'; 
+});
+
+  var popover = new bootstrap.Popover(document.getElementById('popoverBtn2'), {
+    container: 'body',
+    placement: 'top',
+    content: 'Halaman ini belum dibuat',
+  });
+    </script>
+  </body>
+</html>
