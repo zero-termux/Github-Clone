@@ -87,7 +87,7 @@ button#dp2 {
 }
 
 #menu nav i {
-  font-size: 22.5px;
+  font-size: 24px;
   line-height: 0.7;
   cursor: pointer;
 }
@@ -117,75 +117,35 @@ button#dp2 {
   font-size: 16px;
 }
 
+#dkp {
+  display: none;
+}
+
 /* lebar dekstop */
 @media screen and (min-width: 600px) {
+  #dkp {
+    display: block;
+  }
   
- #nav nav {
-   margin-left: 55px;
-   width: 93%;
-   height: 40px;
- }
- 
- nav#nav2 {
-  margin-top: 39px!important;
-}
- 
- section#isi {
-   margin-left: 50px;
-   width: 93%;
-   margin-top: -15px;
- }
- 
-  #menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 7%;
-        height: 100%;
-        background-color: rgb(27, 27, 27);
-        box-shadow: 1px 0px 1px rgb(82, 82, 82);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #menu nav {
-        height: 100%;
-        width: 55px;
-        box-shadow: none;
-        margin: -12px;
-        margin-bottom: 10px;
-      }
-
-      #menu nav i {
-        font-size: 22px;
-        line-height: 1.8;
-      }
-
-      #menu .col-2,
-      #menu .col-3 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      #menu .col-3 i {
-        font-size: 22px;
-      }
-      
-      #menu .col-2 i {
-        font-size: 22px;
-        margin-left: -15px;
-      }
-
-      #menu nav i span {
-        display: none; /* Hide the span within the nav icon */
-      }
+  .parent{
+    display: none;
+  }
+  
 }
     </style>
     
   </head>
   <body>
+<!-- awal dkp -->
+<div id="dkp" style="position: absolute; z-index: 999; margin: 5% 15%; width: 700px; color: white;" class="text-center">
+  <p>
+    <h2>Jika ingin melihat isi web ini silahkan pergi ke tampilan mobile</h2>
+  </p>
+  <img src="dkp.jpg" alt="baca aja" width="80%" style="box-shadow: 0px 0px 5px white;">
+</div>
+<!-- akhir dkp -->
+
+
 <div class="parent">
 
      <!-- awal nav -->
@@ -292,14 +252,14 @@ button#dp2 {
   <div class="container-fluid">
       <div class="row text-center ms-auto">
         
-        <div id="home" class="col-2 ms-2 me-3">
-          <i class="bi bi-house-door" style="color: white; opacity: 0.6;">
+        <div class="col-3">
+          <i class="bi bi-house-door-fill" style="color: rgb(26,126,204);">
             <span>Home</span>
           </i>
         </div>
         
         <div class="col-3">
-          <i id="ntfks" class="bi bi-bell-fill" style="color: rgb(26,126,204);">
+          <i id="ntfks" class="bi bi-bell" style="color: white; opacity: 0.6;">
             <span>Notification</span>
           </i>
         </div>
@@ -311,7 +271,7 @@ button#dp2 {
         </div>
         
         <div class="col-3">
-          <i class="bi bi-person" style="color: white; opacity: 0.6; font-size: 25px; line-height: 0.4;" id="popoverBtn2">
+          <i class="bi bi-person" style="color: white; opacity: 0.6; font-size: 26px; line-height: 0.5;" id="popoverBtn2">
             <span>Profile</span>
           </i>
         </div>
