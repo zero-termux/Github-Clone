@@ -145,7 +145,7 @@ section#exp {
 }
 
 #menu nav i {
-  font-size: 22.5px;
+  font-size: 24px;
   line-height: 0.7;
   cursor: pointer;
 }
@@ -155,91 +155,34 @@ section#exp {
   font-style: normal;
 }
 
+#dkp {
+  display: none;
+}
+
 /* lebar dekstop */
 @media screen and (min-width: 600px) {
+  #dkp {
+    display: block;
+  }
   
- #nav nav {
-   margin-left: 55px;
-   width: 93%;
-   height: 55px;
- }
- 
- section#isi {
-   margin-left: 55px;
-   width: 93%;
-   margin-top: 55px;
- }
- 
- #exp .awal {
-   margin-left: 53px;
-   width: 93.2%;
- }
- 
- img#tlskp {
-   width: 20%!important;
- }
- 
- img.prl {
-   width: 4%!important;
- }
- 
-#exp #akr {
-  margin-bottom: 5px!important;
-} 
- 
- #judul {
-   margin-left: 7%!important;
- }
- 
-  #menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 7%;
-        height: 100%;
-        background-color: rgb(27, 27, 27);
-        box-shadow: 1px 0px 1px rgb(82, 82, 82);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #menu nav {
-        height: 100%;
-        width: 55px;
-        box-shadow: none;
-        margin: -12px;
-        margin-bottom: 10px;
-      }
-
-      #menu nav i {
-        font-size: 22px;
-        line-height: 1.8;
-      }
-
-      #menu .col-2,
-      #menu .col-3 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      #menu .col-3 i {
-        font-size: 22px;
-      }
-      
-      #menu .col-2 i {
-        font-size: 22px;
-        margin-left: -15px;
-      }
-
-      #menu nav i span {
-        display: none; /* Hide the span within the nav icon */
-      }
+  .parent{
+    display: none;
+  }
+  
 }
     </style>
   </head>
   <body>
+<!-- awal dkp -->
+<div id="dkp" style="position: absolute; z-index: 999; margin: 5% 15%; width: 700px; color: white;" class="text-center">
+  <p>
+    <h2>Jika ingin melihat isi web ini silahkan pergi ke tampilan mobile</h2>
+  </p>
+  <img src="dkp.jpg" alt="baca aja" width="80%" style="box-shadow: 0px 0px 5px white;">
+</div>
+<!-- akhir dkp -->
+
+
   <div class="parent">
     <!-- awal nav -->
     <section id="nav">
@@ -338,14 +281,14 @@ section#exp {
     </section>
     <!-- akhir exp -->
     
-       <!-- awal menu -->
+   <!-- awal menu -->
    <section id="menu">
         <nav class="navbar navbar-expand-lg  border-body fixed-bottom" data-bs-theme="dark">
   <div class="container-fluid">
       <div class="row text-center ms-auto">
         
-        <div class="col-2 ms-2 me-3">
-          <i id="home" class="bi bi-house-door" style="color: white; opacity: 0.6;">
+        <div class="col-3">
+          <i class="bi bi-house-door" style="color: white; opacity: 0.6;">
             <span>Home</span>
           </i>
         </div>
@@ -357,13 +300,13 @@ section#exp {
         </div>
         
         <div class="col-3">
-          <i class="bi bi-binoculars-fill" style="color: rgb(26,126,204);">
+          <i id="exp" class="bi bi-binoculars-fill" style="color: rgb(26,126,204);">
             <span>Explore</span>
           </i>
         </div>
         
         <div class="col-3">
-          <i class="bi bi-person" style="color: white; opacity: 0.6; font-size: 25px; line-height: 0.4;" id="popoverBtn2">
+          <i class="bi bi-person" style="color: white; opacity: 0.6; font-size: 26px; line-height: 0.5;" id="popoverBtn2">
             <span>Profile</span>
           </i>
         </div>
