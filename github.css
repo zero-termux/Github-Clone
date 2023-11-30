@@ -233,8 +233,19 @@ p.pg {
   display: none;
 }
 
+
+/* layar besar */
+@media screen and (min-width: 375px) {
+  #menu nav i {
+    font-size: 32px;
+    line-height: 0.2;
+    cursor: pointer;
+  }
+}
+
+
 /* lebar dekstop */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   #dkp {
     display: block;
   }
