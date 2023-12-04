@@ -244,6 +244,16 @@ p.pg {
 }
 
 
+/* layar lumayan besar */
+@media screen and (min-width: 415px) {
+  #menu nav i {
+  font-size: 40px;
+  line-height: 0.0;
+  cursor: pointer;
+  }
+}
+
+
 /* lebar dekstop */
 @media screen and (min-width: 500px) {
   #dkp {
@@ -255,3 +265,4 @@ p.pg {
   }
   
 }
+
